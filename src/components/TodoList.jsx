@@ -9,7 +9,7 @@ function TodoList({todos, toggleTodo, deleteTodo}) {
                     </span>
 
                     <div className="tugas-actions">
-                        <button className="selesai-btn" onClick={() => toggleTodo(todo.id)} >
+                        <button onClick={() => toggleTodo(todo.id)} className="selesai-btn">
                             {todo.completed ? "Batal" : "Selesai"}
                         </button>
                         <button onClick={() => deleteTodo(todo.id)} className="delete-btn">
